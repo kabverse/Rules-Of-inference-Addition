@@ -1,0 +1,123 @@
+* {
+    text-decoration: none;
+    color: white; /* This affects all text unless overridden */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Styling */
+nav {
+    position: fixed; /* Fixed positioning to overlap the hero */
+    top: 20px; /* Move down from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center the nav exactly */
+    z-index: 2; /* Ensure it's on top of the hero */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the nav items */
+}
+
+/* List and list items styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 30px; /* Space between items */
+}
+
+/* Link styling */
+nav ul li a {
+    color: white;
+    padding: 10px 15px; /* Padding for better click area */
+    transition: background-color 0.5s, color 0.5s; /* Smooth transitions */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+/* Change link color and background on hover */
+nav ul li a:hover {
+    color: white;
+}
+
+/* About Section Styling */
+.about-pop,
+.addition-pop,
+.examples-pop,
+.practice-pop,
+.contact-pop {
+    font-size: 120px; /* Adjust font size */
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    display: flex;
+    position: fixed; /* Use fixed positioning for the whole viewport */
+    top: 0; /* Start from the top */
+    left: 0; /* Start from the left */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s; /* Smooth transition */
+    z-index: 1; /* Ensure it's above other elements */
+    background-color: rgb(255, 255, 255);
+}
+
+/* Change text color for all pop-ups */
+.about-pop h1,
+.addition-pop h1,
+.examples-pop h1,
+.practice-pop h1,
+.contact-pop h1 {
+    color: rgb(26, 26, 26); /* Change text color */
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 600px; /* Limit the width of the container */
+    margin: 100px auto; /* Center the content with space from the top */
+    padding: 20px;
+    background-color: rgba(35, 35, 35, 0.9); /* Slightly transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+.questions {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.answers {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+
+.prac{
+    margin-top: 0;
+    font-size: 330px; /* Adjust font size */
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+    display: flex;
+    position: fixed; /* Use fixed positioning for the whole viewport */
+    top: 0; /* Start from the top */
+    left: 0; /* Start from the left */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center;
+    z-index: -1;
+}
